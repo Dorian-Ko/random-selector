@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左 vs 右 | Left vs Right</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <!-- Mode: Left vs Right -->
+        <section id="mode-lr" class="mode-section active">
+            <div class="cards-wrapper">
+                <div class="card" id="card-left">
+                    <div class="content">
+                        <h2>左</h2>
+                        <span>Left</span>
+                    </div>
+                </div>
+                <div class="card" id="card-right">
+                    <div class="content">
+                        <h2>右</h2>
+                        <span>Right</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn-lr" class="glass-btn">
+                    <span class="btn-text">左或右</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+
+            <div class="nav-arrow nav-right" id="to-number-btn" title="切換到數字模式 (Right Arrow)">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </div>
+        </section>
+
+        <!-- Mode: Number 0-9 -->
+        <section id="mode-number" class="mode-section hidden">
+            <div class="number-display">
+                <div class="giant-number" id="giant-number">0</div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn-num" class="glass-btn">
+                    <span class="btn-text">0-9</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+
+            <div class="nav-arrow nav-left" id="to-lr-btn" title="回到左右模式 (Left Arrow)">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
