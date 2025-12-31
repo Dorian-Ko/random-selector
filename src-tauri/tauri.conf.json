@@ -2,8 +2,8 @@
   "build": {
     "beforeDevCommand": "",
     "beforeBuildCommand": "",
-    "devPath": "../",
-    "distDir": "../",
+    "devPath": "../src-ui",
+    "distDir": "../src-ui",
     "withGlobalTauri": true
   },
   "package": {
