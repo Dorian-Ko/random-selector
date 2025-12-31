@@ -113,10 +113,10 @@ body {
     flex: 1;
     height: 60vh;
     max-height: 500px;
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid var(--card-border);
+    border: 2px solid rgba(255, 215, 0, 0.3);
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -131,10 +131,10 @@ body {
     transform: translateZ(0);
 
     /* Inactive State by default */
-    opacity: 0.3;
+    opacity: 0.6;
     transform: scale(1);
     /* No scaling for inactive */
-    filter: grayscale(0.5);
+    filter: grayscale(0);
 }
 
 .card .content {
