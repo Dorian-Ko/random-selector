@@ -126,12 +126,32 @@ body {
     position: relative;
     overflow: hidden;
 
-    /* Performance optimizations */
-    will-change: transform, opacity, filter, box-shadow;
     transform: translateZ(0);
 
+    /* Text improvements */
+    color: #fff;
+    font-weight: bold;
+}
+
+#card-left {
+    background: rgba(220, 20, 60, 0.2);
+    /* Crimson Red Tint */
+    border: 3px solid rgba(255, 50, 50, 0.8);
+    box-shadow: 0 0 20px rgba(220, 20, 60, 0.2);
+}
+
+#card-right {
+    background: rgba(255, 215, 0, 0.2);
+    /* Gold Tint */
+    border: 3px solid rgba(255, 215, 0, 0.8);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+.card {
+    /* ... previous styles ... */
     /* Inactive State by default */
-    opacity: 0.6;
+    opacity: 0.8;
+    /* Increased visibility */
     transform: scale(1);
     /* No scaling for inactive */
     filter: grayscale(0);
