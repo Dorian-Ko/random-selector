@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cards.forEach(c => {
             c.classList.remove('active');
             c.classList.remove('highlight');
+            c.classList.remove('loser');
         });
 
         const duration = Math.random() * 5000 + 10000;
@@ -138,11 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function finish() {
             const winner = cards[activeIndex];
+            const loser = cards[(activeIndex + 1) % 2]; // The other card
             const winnerName = activeIndex === 0 ? 'LEFT' : 'RIGHT';
             log(`FINISHED. Winner: ${winnerName}`);
 
             cards.forEach(c => c.classList.remove('highlight'));
             winner.classList.add('active');
+            loser.classList.add('loser'); // Blur the loser
             bg.classList.add('dimmed');
 
             isAnimating = false;
