@@ -398,4 +398,36 @@ body {
     .blob {
         opacity: 0.4;
     }
+}/* App Title */
+.app-title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    font-family: 'Inter', sans-serif;
+    /* Or a fancier font if available */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    z-index: 20;
+    white-space: nowrap;
+
+    /* Gold Gradient Text */
+    background: linear-gradient(to bottom, #FFD700, #FDB931);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Glowing Shadow */
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
+
+    transition: all 0.5s ease;
+}
+
+/* Hide title on small screens if it overlaps, or scale it down */
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2.5rem;
+        top: 3%;
+    }
 }
