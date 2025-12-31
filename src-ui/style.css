@@ -135,14 +135,16 @@ body {
 
 #card-left {
     background: rgba(30, 30, 30, 0.85);
-    border: 3px solid rgba(255, 50, 50, 0.8);
-    box-shadow: 0 0 20px rgba(220, 20, 60, 0.2);
+    border: 3px solid rgba(135, 206, 250, 0.9);
+    /* Light Blue */
+    box-shadow: 0 0 20px rgba(135, 206, 250, 0.2);
 }
 
 #card-right {
     background: rgba(30, 30, 30, 0.85);
-    border: 3px solid rgba(255, 215, 0, 0.8);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    border: 3px solid rgba(135, 206, 250, 0.9);
+    /* Light Blue */
+    box-shadow: 0 0 20px rgba(135, 206, 250, 0.2);
 }
 
 .card {
