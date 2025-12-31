@@ -1,12 +1,12 @@
 :root {
-    --bg-color: #050510;
+    --bg-color: #2a0a0a;
     --text-color: #ffffff;
     --card-bg: rgba(255, 255, 255, 0.05);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --active-glow: rgba(255, 255, 255, 0.6);
-    --blob-1: #4f46e5;
-    --blob-2: #ec4899;
-    --blob-3: #8b5cf6;
+    --card-border: rgba(255, 215, 0, 0.2);
+    --active-glow: rgba(255, 215, 0, 0.6);
+    --blob-1: #FFD700;
+    --blob-2: #FF0000;
+    --blob-3: #FF8C00;
 }
 
 * {
